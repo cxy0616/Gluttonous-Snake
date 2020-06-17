@@ -1,0 +1,77 @@
+.content{
+	width: 640px;
+	height: 640px;
+	margin:100px auto;
+	position:relative;
+}
+.btn{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left:0;
+	top:0;
+	background-color:rgba(0,0,0,0.3);
+	z-index:2;
+
+}
+.btn button{
+	/* 清除表单的样式 */
+	/* background: none; */
+	border:none;
+	background-size:100% 100%;
+	/* cursor属性定义了鼠标指针放在一个元素边界范围内时所用的光标形状 */
+	cursor:pointer;
+	outline:none;
+	position: absolute;
+	left:50%;
+	top:50%;
+
+
+}
+.startBtn button{
+	width: 200px;
+	height: 80px;
+	background-image: url(../images/startGame.png);
+	margin-left:-100px;
+	margin-top:-40px;
+}
+.pauseBtn{
+	display:none;
+}
+.pauseBtn button{
+	width: 70px;
+	height: 70px;
+	background-image: url(../images/start.png);
+	margin-left:-35px;
+	margin-top:-35px;
+	/* 居中对齐 */
+	
+}
+#snakeWrap{
+	width: 600px;
+	height: 600px;
+	background: #225675;
+	border:20px solid #7dd9ff;
+	position: relative;
+}
+#snakeWrap div{
+	width: 20px;
+	height: 20px;
+}
+.snakeHead{
+	background-image: url(../images/snake.png);
+	/* background-size: contain; 和下面的语句效果一样*/
+
+	background-size: cover;
+	/* 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域 */
+	/* 和容器一样大的效果 */
+}
+.snakeBody{
+	background-color: #9ddbb1;
+	border-radius: 50%;
+	/* 圆 */
+}
+.food{
+	background-image: url(../images/food.png);
+	background-size: contain;
+}
